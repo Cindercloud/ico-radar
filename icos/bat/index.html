@@ -12,11 +12,17 @@
 <link href="/style/css/plugins.css" rel="stylesheet">
 <link href="/style/css/prettify.css" rel="stylesheet">
 <link href="/style.css" rel="stylesheet">
-<link href="/style/css/color/blue.css" rel="stylesheet">
+<link href="/style/css/color/orange.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
 <link href="/style/type/fontello.css" rel="stylesheet">
 <link href="/style/type/budicons.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
+<!-- <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-classic.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-plain.css" /> -->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="style/js/html5shiv.js"></script>
@@ -28,33 +34,29 @@
 <div class="body-wrapper">
   <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header"> <a class="btn responsive-menu" data-toggle="collapse" data-target=".navbar-collapse"><i></i></a>
-      <div class="navbar-brand text-center"> <a href="index.html"><img src="style/images/logo.png" alt="" data-src="style/images/logo.png" data-ret="style/images/logo@2x.png" class="retina" /></a> </div>
+      <div class="navbar-brand text-center"> <a href="#"><img src="img/logo_smaller.png" alt="" 
+      data-src="img/logo_smaller.png" data-ret="img/logo_smaller.png" class="retina" /></a> </div>
       <!-- /.navbar-brand --> 
     </div>
     <!-- /.navbar-header -->
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="./#home" >Home</a></li>
-        <li><a href="./#portfolio" >Portfolio</a></li>
-        <li><a href="./#about" >About</a></li>
-        <li><a href="./#contact" >Contact</a></li>
-        <li class="current"><a href="./blog.html" >Blog</a></li>
-        <li><a href="./elements.html" >Elements</a></li>
+        <li class="current"><a href="#home">Home</a></li>
+        <li><a href="/#portfolio">ICO Radar</a></li>
+        <li><a href="https://blog.cinder.cloud">blog</a></li>
+        <li><a href="/#about">About</a></li>
+ <!--    <li><a href="#contact">Contact</a></li> -->
         <li><a href="#elsewhere" class="fancybox-inline" data-fancybox-width="325" data-fancybox-height="220"><i class="icon-heart-1"></i><span>Elsewhere</span></a></li>
       </ul>
       <!-- /.navbar-nav --> 
     </div>
     <!-- /.navbar-collapse -->
     <div id="elsewhere" style="display:none;">
-      <h1>Me, Elsewhere</h1>
+      <h1>Contact us, Elsewhere</h1>
       <div class="divide20"></div>
       <ul class="social">
-        <li><a href="#"><i class="icon-s-twitter"></i></a></li>
-        <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-        <li><a href="#"><i class="icon-s-instagram"></i></a></li>
-        <li><a href="#"><i class="icon-s-flickr"></i></a></li>
-        <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-        <li><a href="#"><i class="icon-s-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/cindercloudapp"><i class="icon-s-twitter"></i></a></li>
+        <li><a href="https://github.com/cindercloud"><i class="icon-s-github"></i></a></li>
       </ul>
     </div>
     <!-- /#elsewhere --> 
@@ -66,53 +68,32 @@
       <div class="col-md-8 col-sm-12 content">
         <div class="blog-posts">
           <div class="post box">
-            <div class="meta"><span class="category">Journal</span><span class="date">13 Nov 2012</span><span class="comments"><a href="#">8 <i class="icon-chat-1"></i></a></span></div>
-            <h2 class="post-title"><a href="blog-post.html">Curabitur blandit tempus porttitor nullam id dolor nibh</a></h2>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-            <figure class="frame"><img src="style/images/art/b3-1.jpg" alt="" /></figure>
-            <p>Donec sed odio dui <a href="#">consectetur adipiscing</a> elit. <span class="highlight">Etiam adipiscing</span> tincidunt elit, eu convallis felis suscipit ut. <span class="highlight2">Phasellus rhoncus tincidunt</span> auctor. Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at sapien. Aenean tortor libero, condimentum ac laoreet vitae, varius tempor nisi. Duis non arcu vel lectus. </p>
-            <ul class="circled">
-              <li>Mauris lacinia dui non metus dignissim venenatis.</li>
-              <li>Etiam elit tellus, condimentum tempor lobortis non.</li>
-              <li>Aliquam pharetra vestibulum arcu, eget iaculis. </li>
-            </ul>
+            <h2 class="post-title"><a href="blog-post.html">Basic Attention Token</a></h2>
+            <p>Basic Attention Token radically improves the efficiency of digital advertising by creating a new token that can be exchanged between publishers, advertisers and users. It all happens on the Ethereum blockchain. </p>
+
+            <p>The token can be used to obtain a variety of advertising and attention-based services on the Brave platform. The utility of the token is based on user attention, which simply means a person’s focused mental engagement.  </p>
+            <figure class=""><img src="/img/icos/bat/BAT_icon.svg" alt="" /></figure>
+            <p>Digital advertising is broken. It is a market filled with middlemen and fraudsters, hurting users, publishers and advertisers. The Basic Attention Token (BAT) was developed to address this. BAT, an ERC20 token built on top of Ethereum, will be the token of utility in a new, decentralized, open source and efficient blockchain-based digital advertising platform. </p>
+            
             <div class="divide20"></div>
-            <h3>Pellentesque Euismod Amet</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna vel.</p>
-            <div class="row">
-              <div class="col-sm-6">
-                <figure class="frame"> <a href="style/images/art/b2-1.jpg" class="fancybox-media" data-rel="portfolio">
-                  <div class="text-overlay">
-                    <div class="info">View Larger</div>
-                  </div>
-                  <img src="style/images/art/b2-1.jpg" alt="" /></a></figure>
-              </div>
-              <!-- /column -->
-              <div class="col-sm-6">
-                <figure class="frame"> <a href="style/images/art/b2-1.jpg" class="fancybox-media" data-rel="portfolio">
-                  <div class="text-overlay">
-                    <div class="info">View Larger</div>
-                  </div>
-                  <img src="style/images/art/b2-2.jpg" alt="" /></a></figure>
-              </div>
-              <!-- /column --> 
-            </div>
+            <h3>The Team</h3>
+            <p>Our motto at Cindercloud is: "Invest in the team, not the product". When it comes to the team over at BAT, we're in for a treat, names such as Brendan Eich (yes, the Brendan Eich), Yan Zhu, Brian Brown, Marshall Rose and many more. 
+              Just look at <a href="https://basicattentiontoken.org/about/index.html">their about page</a> and you'll quickly discover that BAT probably just has about the best people in the field one could find at the moment.   
+            </p>
+
             <!-- /.row -->
-            <p> Mauris convallis, sapien id ultricies aliquet, mi nisi congue dui, id laoreet ligula ante vitae ligula. Duis lectus magna, cursus in molestie eget, cursus eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi ullamcorper laoreet metus, eu commodo diam cursus et. Nam eleifend aliquam augue, id condimentum erat vehicula vel. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet.</p>
             <div class="divide20"></div>
-            <h3>Sit Vulputate Bibendum Purus</h3>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <figure class="frame"> <a href="style/images/art/blog-post2.jpg" class="fancybox-media" data-rel="portfolio">
-              <div class="text-overlay">
-                <div class="info">View Larger</div>
-              </div>
-              <img src="style/images/art/blog-post2.jpg" alt="" /></a></figure>
-            <p>Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui.
-              
-              Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-            <div class="meta tags"><a href="#">journal</a>, <a href="#">illustration</a>, <a href="#">design</a>, <a href="#">daily</a></div>
+            <h3>Investment Advise</h3>
+            <p>Pre-ICO, we definitely would've recommended to invest in this ICO. Although there was a lot of noise coming from the community concerning the price they put on 
+              their coin offering, as there was quite some volatility on the eth-usd pair. Nevertheless, the team quickly communicated that they don't intend to keep any 
+              fundings that could possibly come from such volatility. </p>
+              <p>
+                For us, this blogpost means a lot about the professionality of the people at BAT. They just want to reach their goal so they can keep on developing BAT. 
+              </p>
+              <p>
+                At this point, the market cap of BAT is more than tenfold of what people initially invested. BAT is definitely a product we're going to follow closely.
+                </p>
             <!-- /.tags -->
-            <div class="share"> <a href="#" class="btn share-facebook">Like</a> <a href="#" class="btn share-twitter">Tweet</a> <a href="#" class="btn share-googleplus">+1</a> <a href="#" class="btn share-pinterest">Pin It</a> </div>
             <!-- /.share --> 
           </div>
           <!-- /.post --> 
@@ -122,17 +103,17 @@
         <div class="divide20"></div>
         
         <div class="about-author box">
-          <div class="author-image frame"> <img alt="" src="style/images/art/author.jpg" /> </div>
           <div class="author-details">
-            <h3>About the author</h3>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis.</p>
-            <ul class="social">
-              <li><a href="#"><i class="icon-s-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-              <li><a href="#"><i class="icon-s-dribbble"></i></a></li>
-              <li><a href="#"><i class="icon-s-linkedin"></i></a></li>
-            </ul>
+            <h3>Share this information</h3>
+              <div id="share"></div>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+
+              <script>
+                  $("#share").jsSocials({
+                      shares: ["twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon"]
+                  });
+            </script>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -140,128 +121,32 @@
         
         <div class="divide20"></div>
         
-        <div id="comments" class="box">
-          <h3>4 Comments</h3>
-          <ol id="singlecomments" class="commentlist">
-            <li>
-              <div class="user frame"><img alt="" src="style/images/art/u1.jpg" class="avatar" /></div>
-              <div class="message">
-                <div class="info">
-                  <h2><a href="#">Connor Gibson</a></h2>
-                  <div class="meta">
-                    <div class="date">January 14, 2010</div>
-                    <a class="reply-link" href="#">Reply</a> </div>
-                </div>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
-              </div>
-            </li>
-            <li>
-              <div class="user frame"><img alt="" src="style/images/art/u2.jpg" class="avatar" /></div>
-              <div class="message">
-                <div class="info">
-                  <h2><a href="#">Nikolas Brooten</a></h2>
-                  <div class="meta">
-                    <div class="date">February 21, 2010</div>
-                    <a class="reply-link" href="#">Reply</a> </div>
-                </div>
-                <p>Quisque tristique tincidunt metus non aliquam. Quisque ac risus sit amet quam sollicitudin vestibulum vitae malesuada libero. Mauris magna elit, suscipit non ornare et, blandit a tellus. Pellentesque dignissim ornare elit, quis mattis eros sodales ac.</p>
-              </div>
-              <ul class="children">
-                <li class="bypostauthor">
-                  <div class="user frame"><img alt="" src="style/images/art/u3.jpg" class="avatar" /></div>
-                  <div class="message">
-                    <div class="bypostauthor">
-                      <div class="info">
-                        <h2><a href="#">Pearce Frye</a></h2>
-                        <div class="meta">
-                          <div class="date">February 22, 2010</div>
-                          <a class="reply-link" href="#">Reply</a> </div>
-                      </div>
-                      <p>Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit non magna.</p>
-                    </div>
-                  </div>
-                  <ul class="children">
-                    <li>
-                      <div class="user frame"><img alt="" src="style/images/art/u2.jpg" class="avatar" /></div>
-                      <div class="message">
-                        <div class="info">
-                          <h2><a href="#">Nikolas Brooten</a></h2>
-                          <div class="meta">
-                            <div class="date">April 4, 2010</div>
-                            <a class="reply-link" href="#">Reply</a> </div>
-                        </div>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div class="user frame"><img alt="" src="style/images/art/u4.jpg" class="avatar" /></div>
-              <div class="message">
-                <div class="info">
-                  <h2><a href="#">Lou Bloxham</a></h2>
-                  <div class="meta">
-                    <div class="date">May 03, 2010</div>
-                    <a class="reply-link" href="#">Reply</a> </div>
-                </div>
-                <p>Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-        <!-- /#comments -->
-        
-        <div class="divide20"></div>
-        
-        <div class="comment-form-wrapper box">
-          <h3>Would you like to share your thoughts?</h3>
-          <p>Your email address will not be published. Required fields are marked *</p>
-          <form class="comment-form" name="form_name" action="#" method="post">
-            <div class="name-field">
-              <input type="text" name="first" title="Name*"/>
-            </div>
-            <div class="email-field">
-              <input type="text" name="first" title="Email*" />
-            </div>
-            <div class="website-field">
-              <input type="text" name="first" title="Website" />
-            </div>
-            <div class="message-field">
-              <textarea name="textarea" id="textarea" rows="5" cols="30" title="Enter your comment here..."></textarea>
-            </div>
-            <input type="submit" value="Submit" name="submit" class="btn btn-submit" />
-          </form>
-        </div>
-        <!-- /.comment-form-wrapper --> 
-        
       </div>
       <!-- /.content -->
       
       <aside class="col-md-4 col-sm-12 sidebar">
         
         <div class="sidebox box widget">
-          <form class="searchform" method="get">
-            <input type="text" id="s2" name="s" value="type and hit enter" onfocus="this.value=''" onblur="this.value='type and hit enter'"/>
-          </form>
+          <h3 class="widget-title section-title">Trading</h3>
+          <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currency="basic-attention-token" data-base="EUR" data-secondary="USD" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
+          <!-- /.tag-list --> 
         </div>
-        <!-- /.widget -->
+        <!-- /.widget --> 
         
         <div class="sidebox box widget">
           <h3 class="widget-title section-title">In the media</h3>
           <ul class="post-list">
             <li>
-              <figure class="frame pull-left">
-                <div class="icon-overlay"><a href="http://www.the-blockchain.com/2017/06/01/brave-token-sale-blasts-records-35-million-30-seconds/"><img src="style/images/art/a1.jpg" alt="" /> </a></div>
+              <figure class="pull-left">
+                <div class="icon-overlay"><a href="http://www.the-blockchain.com/2017/06/01/brave-token-sale-blasts-records-35-million-30-seconds/"><img src="/img/icos/bat/BAT_icon.svg" alt="" /> </a></div>
               </figure>
               <div class="meta"> <em><span class="date">1 June 2017</span><span class="comments"><a href="#">8 <i class="icon-chat-1"></i></a></span></em>
                 <h5><a href="http://www.the-blockchain.com/2017/06/01/brave-token-sale-blasts-records-35-million-30-seconds/">Brave Token Sale Blasts Records With $35 Million in 30 Seconds</a></h5>
               </div>
             </li>
             <li>
-              <figure class="frame pull-left">
-                <div class="icon-overlay"><a href="https://www.ethnews.com/brave-browsers-bat-tokens-sell-out-in-seconds-totaling-36-million-invested"><img src="style/images/art/a2.jpg" alt="" /> </a></div>
+              <figure class="pull-left">
+                <div class="icon-overlay"><a href="https://www.ethnews.com/brave-browsers-bat-tokens-sell-out-in-seconds-totaling-36-million-invested"><img src="/img/icos/bat/BAT_icon.svg" alt="" /> </a></div>
               </figure>
               <div class="meta"> <em><span class="date">1 June 2017</span><span class="comments"><a href="#">5 <i class="icon-chat-1"></i></a></span></em>
                 <h5><a href="https://www.ethnews.com/brave-browsers-bat-tokens-sell-out-in-seconds-totaling-36-million-invested">Brave Browser's BAT Tokens Sell Out In Seconds, Totaling $36 Million</a></h5>
@@ -284,38 +169,6 @@
           <div class="clearfix"></div>
         </div>
         <!-- /.widget -->
-        
-        <div class="sidebox box widget">
-          <h3 class="widget-title section-title">Categories</h3>
-          <ul class="circled">
-            <li><a href="#">Web Design (21)</a></li>
-            <li><a href="#">Photography (19)</a></li>
-            <li><a href="#">Graphic Design (16)</a></li>
-            <li><a href="#">Manipulation (15)</a></li>
-            <li><a href="#">Motion Graphics (12)</a></li>
-          </ul>
-        </div>
-        <!-- /.widget -->
-        
-        <div class="sidebox box widget">
-          <h3 class="widget-title section-title">Tags</h3>
-          <ul class="tag-list">
-            <li><a href="#" class="btn">Web</a></li>
-            <li><a href="#" class="btn">Photography</a></li>
-            <li><a href="#" class="btn">Illustation</a></li>
-            <li><a href="#" class="btn">Fun</a></li>
-            <li><a href="#" class="btn">Blog</a></li>
-            <li><a href="#" class="btn">Design</a></li>
-            <li><a href="#" class="btn">Inspiration</a></li>
-            <li><a href="#" class="btn">Tips</a></li>
-            <li><a href="#" class="btn">Manipulation</a></li>
-            <li><a href="#" class="btn">Graphic</a></li>
-            <li><a href="#" class="btn">Travel</a></li>
-            <li><a href="#" class="btn">Concept</a></li>
-          </ul>
-          <!-- /.tag-list --> 
-        </div>
-        <!-- /.widget --> 
         
       </aside>
       <!-- /column .sidebar --> 

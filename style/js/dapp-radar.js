@@ -241,69 +241,9 @@ jQuery(document).ready(function() {
 /*-----------------------------------------------------------------------------------*/			
 (function($, window, document, undefined) {
     'use strict';
-    var gridContainer = $('#portfolio-grid-container'),
-        filtersContainer = $('#portfolio-filters-container'),
-        gridContainer2 = $('#technology-grid-container'),
+    var gridContainer2 = $('#technology-grid-container'),
         filtersContainer2 = $('#technology-filters-container'),
-        wrap, filtersCallback, filtersCallback2;
-    /*********************************
-        init cubeportfolio
-     *********************************/
-    gridContainer.cubeportfolio({
-        layoutMode: 'grid',
-        rewindNav: true,
-        scrollByPage: false,
-        defaultFilter: '*',
-        animationType: 'quicksand',
-        gapHorizontal: 10,
-        gapVertical: 10,
-        gridAdjustment: 'responsive',
-        mediaQueries: [{
-            width: 1100,
-            cols: 4
-        }, {
-            width: 800,
-            cols: 3
-        }, {
-            width: 500,
-            cols: 2
-        }, {
-            width: 320,
-            cols: 1
-        }],
-        caption: 'overlayBottomAlong',
-        displayType: 'sequentially',
-        displayTypeSpeed: 100,
-
-        // singlePage popup
-        singlePageDelegate: '.cbp-singlePage',
-        singlePageDeeplinking: true,
-        singlePageStickyNavigation: true,
-        singlePageCounter: '',
-        singlePageCallback: function(url, element) {
-            // to update singlePage content use the following method: this.updateSinglePage(yourContent)
-            
-            
-			$('a[data-rel]').each(function () {
-    $(this).attr('rel', $(this).data('rel'));
-});
-
-            var t = this;
-
-            $.ajax({
-                    url: url,
-                    type: 'GET',
-                    dataType: 'html',
-                    timeout: 5000
-                })
-                .done(function(result) {
-                    t.updateSinglePage(result);
-                })
-                .fail(function() {
-                    t.updateSinglePage("Error! Please refresh the page!");
-                });
-        }
-    });
+        wrap, filtersCallback2;
 
        gridContainer2.cubeportfolio({
         layoutMode: 'grid',
@@ -316,18 +256,18 @@ jQuery(document).ready(function() {
         gridAdjustment: 'responsive',
         mediaQueries: [{
             width: 1100,
-            cols: 4
+            cols: 5
         }, {
             width: 800,
-            cols: 3
+            cols: 4
         }, {
             width: 500,
-            cols: 2
+            cols: 3
         }, {
             width: 320,
-            cols: 1
+            cols: 2
         }],
-        caption: 'fadeIn',
+        caption: 'minimal',
         displayType: 'sequentially',
         displayTypeSpeed: 100,
 
@@ -365,29 +305,6 @@ jQuery(document).ready(function() {
     /*********************************
         add listener for filters
      *********************************/
-    if (filtersContainer.hasClass('cbp-l-filters-dropdown')) {
-        wrap = filtersContainer.find('.cbp-l-filters-dropdownWrap');
-
-        wrap.on({
-            'mouseover.cbp': function() {
-                wrap.addClass('cbp-l-filters-dropdownWrap-open');
-            },
-            'mouseleave.cbp': function() {
-                wrap.removeClass('cbp-l-filters-dropdownWrap-open');
-            }
-        });
-
-        filtersCallback = function(me) {
-            wrap.find('.cbp-filter-item-custom').removeClass('cbp-filter-item-custom-active');
-            wrap.find('.cbp-l-filters-dropdownHeader').text(me.text());
-            me.addClass('cbp-filter-item-custom-active');
-            wrap.trigger('mouseleave.cbp');
-        };
-    } else {
-        filtersCallback = function(me) {
-            me.addClass('cbp-filter-item-custom-active').siblings().removeClass('cbp-filter-item-custom-active');
-        };
-    }
 
      if (filtersContainer2.hasClass('cbp-l-filters-dropdown')) {
         wrap = filtersContainer2.find('.cbp-l-filters-dropdownWrap');
@@ -412,22 +329,6 @@ jQuery(document).ready(function() {
             me.addClass('cbp-filter-item-custom-active').siblings().removeClass('cbp-filter-item-custom-active');
         };
     }
-
-    filtersContainer.on('click.cbp', '.cbp-filter-item-custom', function() {
-        var me = $(this);
-
-        if (me.hasClass('cbp-filter-item-custom-active')) {
-            return;
-        }
-
-        // get cubeportfolio data and check if is still animating (reposition) the items.
-        if (!$.data(gridContainer[0], 'cubeportfolio').isAnimating) {
-            filtersCallback.call(null, me);
-        }
-
-        // filter the items
-        gridContainer.cubeportfolio('filter', me.data('filter'), function() {});
-    });
 
     filtersContainer2.on('click.cbp', '.cbp-filter-item-custom', function() {
         var me = $(this);
